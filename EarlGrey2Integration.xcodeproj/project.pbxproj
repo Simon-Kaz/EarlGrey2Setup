@@ -16,6 +16,7 @@
 		A29C02FF22D10FA300782F01 /* EarlGrey2IntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C02FE22D10FA300782F01 /* EarlGrey2IntegrationUITests.swift */; };
 		A29C032922D112BE00782F01 /* libTestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A29C031922D1125100782F01 /* libTestLib.a */; };
 		A29C032B22D1137F00782F01 /* AppFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A29C031722D1125100782F01 /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A29C032D22D1171200782F01 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C032C22D1171200782F01 /* EarlGrey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		A29C02FE22D10FA300782F01 /* EarlGrey2IntegrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGrey2IntegrationUITests.swift; sourceTree = "<group>"; };
 		A29C030022D10FA300782F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A29C030A22D1125100782F01 /* EarlGrey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EarlGrey.xcodeproj; path = EarlGrey/EarlGrey.xcodeproj; sourceTree = "<group>"; };
+		A29C032C22D1171200782F01 /* EarlGrey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
+		A29C032E22D1173100782F01 /* EG2BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EG2BridgingHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,8 @@
 			children = (
 				A29C02FE22D10FA300782F01 /* EarlGrey2IntegrationUITests.swift */,
 				A29C030022D10FA300782F01 /* Info.plist */,
+				A29C032C22D1171200782F01 /* EarlGrey.swift */,
+				A29C032E22D1173100782F01 /* EG2BridgingHeader.h */,
 			);
 			path = EarlGrey2IntegrationUITests;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29C032D22D1171200782F01 /* EarlGrey.swift in Sources */,
 				A29C02FF22D10FA300782F01 /* EarlGrey2IntegrationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,12 +517,13 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.simon-kaz.EarlGrey2IntegrationUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = EarlGrey2IntegrationUITests/EG2BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = EarlGrey2Integration;
 				USER_HEADER_SEARCH_PATHS = (
 					/EarlGrey/Submodules/eDistantObject,
-					/EarlGrey/,
+					"EarlGrey/**",
 				);
 			};
 			name = Debug;
@@ -535,12 +542,13 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.simon-kaz.EarlGrey2IntegrationUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = EarlGrey2IntegrationUITests/EG2BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = EarlGrey2Integration;
 				USER_HEADER_SEARCH_PATHS = (
 					/EarlGrey/Submodules/eDistantObject,
-					/EarlGrey/,
+					"EarlGrey/**",
 				);
 			};
 			name = Release;

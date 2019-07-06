@@ -27,8 +27,8 @@ class EarlGrey2IntegrationUITests: XCTestCase {
     }
 
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
+      EarlGrey.selectElement(with: grey_keyWindow())
+        .perform(grey_tap())
+  }
+  
 }
