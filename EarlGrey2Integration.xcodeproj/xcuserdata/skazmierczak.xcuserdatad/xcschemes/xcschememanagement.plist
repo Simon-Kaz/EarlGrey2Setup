@@ -7,7 +7,25 @@
 		<key>EarlGrey2Integration.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+		<key>EarlGrey2IntegrationUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A29C02E322D10FA200782F01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A29C02F922D10FA300782F01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

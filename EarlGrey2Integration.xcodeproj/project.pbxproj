@@ -14,6 +14,8 @@
 		A29C02F122D10FA300782F01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29C02F022D10FA300782F01 /* Assets.xcassets */; };
 		A29C02F422D10FA300782F01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A29C02F222D10FA300782F01 /* LaunchScreen.storyboard */; };
 		A29C02FF22D10FA300782F01 /* EarlGrey2IntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C02FE22D10FA300782F01 /* EarlGrey2IntegrationUITests.swift */; };
+		A29C032922D112BE00782F01 /* libTestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A29C031922D1125100782F01 /* libTestLib.a */; };
+		A29C032B22D1137F00782F01 /* AppFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A29C031722D1125100782F01 /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +26,48 @@
 			remoteGlobalIDString = A29C02E322D10FA200782F01;
 			remoteInfo = EarlGrey2Integration;
 		};
+		A29C031222D1125100782F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A29C030A22D1125100782F01 /* EarlGrey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FD62395120F56A9700049E81;
+			remoteInfo = CommonLib;
+		};
+		A29C031422D1125100782F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A29C030A22D1125100782F01 /* EarlGrey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FDF9E03520F82D090005DCF2;
+			remoteInfo = UILib;
+		};
+		A29C031622D1125100782F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A29C030A22D1125100782F01 /* EarlGrey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FD623A4920F957BE00049E81;
+			remoteInfo = AppFramework;
+		};
+		A29C031822D1125100782F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A29C030A22D1125100782F01 /* EarlGrey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FD5048F820FB225100261CBE;
+			remoteInfo = TestLib;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A29C032A22D1135D00782F01 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(TARGET_BUILD_DIR)/../../EarlGrey2Integration.app/Frameworks";
+			dstSubfolderSpec = 0;
+			files = (
+				A29C032B22D1137F00782F01 /* AppFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A29C02E422D10FA200782F01 /* EarlGrey2Integration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarlGrey2Integration.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +81,7 @@
 		A29C02FA22D10FA300782F01 /* EarlGrey2IntegrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarlGrey2IntegrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29C02FE22D10FA300782F01 /* EarlGrey2IntegrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGrey2IntegrationUITests.swift; sourceTree = "<group>"; };
 		A29C030022D10FA300782F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A29C030A22D1125100782F01 /* EarlGrey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EarlGrey.xcodeproj; path = EarlGrey/EarlGrey.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29C032922D112BE00782F01 /* libTestLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +109,8 @@
 				A29C02E622D10FA200782F01 /* EarlGrey2Integration */,
 				A29C02FD22D10FA300782F01 /* EarlGrey2IntegrationUITests */,
 				A29C02E522D10FA200782F01 /* Products */,
+				A29C030A22D1125100782F01 /* EarlGrey.xcodeproj */,
+				A29C032822D112BE00782F01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +146,24 @@
 			path = EarlGrey2IntegrationUITests;
 			sourceTree = "<group>";
 		};
+		A29C030B22D1125100782F01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A29C031322D1125100782F01 /* libCommonLib.a */,
+				A29C031522D1125100782F01 /* libUILib.a */,
+				A29C031722D1125100782F01 /* AppFramework.framework */,
+				A29C031922D1125100782F01 /* libTestLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A29C032822D112BE00782F01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,6 +191,7 @@
 				A29C02F622D10FA300782F01 /* Sources */,
 				A29C02F722D10FA300782F01 /* Frameworks */,
 				A29C02F822D10FA300782F01 /* Resources */,
+				A29C032A22D1135D00782F01 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -167,6 +233,12 @@
 			mainGroup = A29C02DB22D10FA100782F01;
 			productRefGroup = A29C02E522D10FA200782F01 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A29C030B22D1125100782F01 /* Products */;
+					ProjectRef = A29C030A22D1125100782F01 /* EarlGrey.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A29C02E322D10FA200782F01 /* EarlGrey2Integration */,
@@ -174,6 +246,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A29C031322D1125100782F01 /* libCommonLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCommonLib.a;
+			remoteRef = A29C031222D1125100782F01 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A29C031522D1125100782F01 /* libUILib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUILib.a;
+			remoteRef = A29C031422D1125100782F01 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A29C031722D1125100782F01 /* AppFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AppFramework.framework;
+			remoteRef = A29C031622D1125100782F01 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A29C031922D1125100782F01 /* libTestLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTestLib.a;
+			remoteRef = A29C031822D1125100782F01 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A29C02E222D10FA200782F01 /* Resources */ = {
@@ -405,11 +508,16 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.simon-kaz.EarlGrey2IntegrationUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = EarlGrey2Integration;
+				USER_HEADER_SEARCH_PATHS = (
+					/EarlGrey/Submodules/eDistantObject,
+					/EarlGrey/,
+				);
 			};
 			name = Debug;
 		};
@@ -424,11 +532,16 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.simon-kaz.EarlGrey2IntegrationUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = EarlGrey2Integration;
+				USER_HEADER_SEARCH_PATHS = (
+					/EarlGrey/Submodules/eDistantObject,
+					/EarlGrey/,
+				);
 			};
 			name = Release;
 		};
