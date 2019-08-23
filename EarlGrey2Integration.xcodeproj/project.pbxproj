@@ -17,6 +17,12 @@
 		A29C032922D112BE00782F01 /* libTestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A29C031922D1125100782F01 /* libTestLib.a */; };
 		A29C032B22D1137F00782F01 /* AppFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A29C031722D1125100782F01 /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A29C032D22D1171200782F01 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C032C22D1171200782F01 /* EarlGrey.swift */; };
+		A29C034422D11C7D00782F01 /* AppFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29C031722D1125100782F01 /* AppFramework.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A29C034622D11CF900782F01 /* eDOBundle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A29C033C22D11C0D00782F01 /* eDOBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A29C034C22D1262D00782F01 /* GREYHostApplicationDistantObject+SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C034B22D1262D00782F01 /* GREYHostApplicationDistantObject+SwiftTests.swift */; };
+		A29C034E22D127D400782F01 /* SwiftTestsHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C034D22D127D400782F01 /* SwiftTestsHost.swift */; };
+		A29C035022D1280700782F01 /* WhiteboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C034F22D1280700782F01 /* WhiteboxTests.swift */; };
+		A29C035122D1286200782F01 /* SwiftTestsHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C034D22D127D400782F01 /* SwiftTestsHost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,13 @@
 			remoteGlobalIDString = FD5048F820FB225100261CBE;
 			remoteInfo = TestLib;
 		};
+		A29C034222D11C6F00782F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A29C02DC22D10FA100782F01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A29C02E322D10FA200782F01;
+			remoteInfo = EarlGrey2Integration;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,6 +78,16 @@
 			dstSubfolderSpec = 0;
 			files = (
 				A29C032B22D1137F00782F01 /* AppFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A29C034522D11CB800782F01 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(TARGET_BUILD_DIR)/../../EarlGrey2Integration.app/EarlGreyHelperBundles";
+			dstSubfolderSpec = 0;
+			files = (
+				A29C034622D11CF900782F01 /* eDOBundle.bundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +108,12 @@
 		A29C030A22D1125100782F01 /* EarlGrey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EarlGrey.xcodeproj; path = EarlGrey/EarlGrey.xcodeproj; sourceTree = "<group>"; };
 		A29C032C22D1171200782F01 /* EarlGrey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
 		A29C032E22D1173100782F01 /* EG2BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EG2BridgingHeader.h; sourceTree = "<group>"; };
+		A29C033C22D11C0D00782F01 /* eDOBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eDOBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29C034722D123DF00782F01 /* SwiftTestBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftTestBridgingHeader.h; sourceTree = "<group>"; };
+		A29C034A22D1262D00782F01 /* eDOBundle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eDOBundle-Bridging-Header.h"; sourceTree = "<group>"; };
+		A29C034B22D1262D00782F01 /* GREYHostApplicationDistantObject+SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GREYHostApplicationDistantObject+SwiftTests.swift"; sourceTree = "<group>"; };
+		A29C034D22D127D400782F01 /* SwiftTestsHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestsHost.swift; sourceTree = "<group>"; };
+		A29C034F22D1280700782F01 /* WhiteboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteboxTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +132,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A29C033922D11C0D00782F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A29C034422D11C7D00782F01 /* AppFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,6 +148,7 @@
 			children = (
 				A29C02E622D10FA200782F01 /* EarlGrey2Integration */,
 				A29C02FD22D10FA300782F01 /* EarlGrey2IntegrationUITests */,
+				A29C033D22D11C0D00782F01 /* eDOBundle */,
 				A29C02E522D10FA200782F01 /* Products */,
 				A29C030A22D1125100782F01 /* EarlGrey.xcodeproj */,
 				A29C032822D112BE00782F01 /* Frameworks */,
@@ -122,6 +160,7 @@
 			children = (
 				A29C02E422D10FA200782F01 /* EarlGrey2Integration.app */,
 				A29C02FA22D10FA300782F01 /* EarlGrey2IntegrationUITests.xctest */,
+				A29C033C22D11C0D00782F01 /* eDOBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +175,7 @@
 				A29C02F022D10FA300782F01 /* Assets.xcassets */,
 				A29C02F222D10FA300782F01 /* LaunchScreen.storyboard */,
 				A29C02F522D10FA300782F01 /* Info.plist */,
+				A29C034722D123DF00782F01 /* SwiftTestBridgingHeader.h */,
 			);
 			path = EarlGrey2Integration;
 			sourceTree = "<group>";
@@ -147,6 +187,7 @@
 				A29C030022D10FA300782F01 /* Info.plist */,
 				A29C032C22D1171200782F01 /* EarlGrey.swift */,
 				A29C032E22D1173100782F01 /* EG2BridgingHeader.h */,
+				A29C034F22D1280700782F01 /* WhiteboxTests.swift */,
 			);
 			path = EarlGrey2IntegrationUITests;
 			sourceTree = "<group>";
@@ -167,6 +208,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A29C033D22D11C0D00782F01 /* eDOBundle */ = {
+			isa = PBXGroup;
+			children = (
+				A29C034B22D1262D00782F01 /* GREYHostApplicationDistantObject+SwiftTests.swift */,
+				A29C034A22D1262D00782F01 /* eDOBundle-Bridging-Header.h */,
+				A29C034D22D127D400782F01 /* SwiftTestsHost.swift */,
+			);
+			path = eDOBundle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +248,7 @@
 				A29C02F722D10FA300782F01 /* Frameworks */,
 				A29C02F822D10FA300782F01 /* Resources */,
 				A29C032A22D1135D00782F01 /* CopyFiles */,
+				A29C034522D11CB800782F01 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -207,6 +259,24 @@
 			productName = EarlGrey2IntegrationUITests;
 			productReference = A29C02FA22D10FA300782F01 /* EarlGrey2IntegrationUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A29C033B22D11C0D00782F01 /* eDOBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A29C033F22D11C0D00782F01 /* Build configuration list for PBXNativeTarget "eDOBundle" */;
+			buildPhases = (
+				A29C033822D11C0D00782F01 /* Sources */,
+				A29C033922D11C0D00782F01 /* Frameworks */,
+				A29C033A22D11C0D00782F01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A29C034322D11C6F00782F01 /* PBXTargetDependency */,
+			);
+			name = eDOBundle;
+			productName = eDOBundle;
+			productReference = A29C033C22D11C0D00782F01 /* eDOBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -224,6 +294,10 @@
 					A29C02F922D10FA300782F01 = {
 						CreatedOnToolsVersion = 10.2.1;
 						TestTargetID = A29C02E322D10FA200782F01;
+					};
+					A29C033B22D11C0D00782F01 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -248,6 +322,7 @@
 			targets = (
 				A29C02E322D10FA200782F01 /* EarlGrey2Integration */,
 				A29C02F922D10FA300782F01 /* EarlGrey2IntegrationUITests */,
+				A29C033B22D11C0D00782F01 /* eDOBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -301,6 +376,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A29C033A22D11C0D00782F01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -319,7 +401,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A29C032D22D1171200782F01 /* EarlGrey.swift in Sources */,
+				A29C035122D1286200782F01 /* SwiftTestsHost.swift in Sources */,
+				A29C035022D1280700782F01 /* WhiteboxTests.swift in Sources */,
 				A29C02FF22D10FA300782F01 /* EarlGrey2IntegrationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A29C033822D11C0D00782F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A29C034C22D1262D00782F01 /* GREYHostApplicationDistantObject+SwiftTests.swift in Sources */,
+				A29C034E22D127D400782F01 /* SwiftTestsHost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +423,11 @@
 			isa = PBXTargetDependency;
 			target = A29C02E322D10FA200782F01 /* EarlGrey2Integration */;
 			targetProxy = A29C02FB22D10FA300782F01 /* PBXContainerItemProxy */;
+		};
+		A29C034322D11C6F00782F01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A29C02E322D10FA200782F01 /* EarlGrey2Integration */;
+			targetProxy = A29C034222D11C6F00782F01 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -475,13 +573,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EarlGrey2Integration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.simon-kaz.EarlGrey2Integration";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -492,13 +591,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EarlGrey2Integration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.simon-kaz.EarlGrey2Integration";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -509,6 +609,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EarlGrey2IntegrationUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,7 +619,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.simon-kaz.EarlGrey2IntegrationUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = EarlGrey2IntegrationUITests/EG2BridgingHeader.h;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = EarlGrey2Integration;
 				USER_HEADER_SEARCH_PATHS = (
@@ -534,6 +635,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EarlGrey2IntegrationUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,13 +645,76 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.simon-kaz.EarlGrey2IntegrationUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = EarlGrey2IntegrationUITests/EG2BridgingHeader.h;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = EarlGrey2Integration;
 				USER_HEADER_SEARCH_PATHS = (
 					/EarlGrey/Submodules/eDistantObject,
 					"EarlGrey/**",
 				);
+			};
+			name = Release;
+		};
+		A29C034022D11C0D00782F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TARGET_BUILD_DIR)/EarlGrey2Integration.app/EarlGrey2Integration";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.simon-kaz.eDOBundle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "eDOBundle/eDOBundle-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				USER_HEADER_SEARCH_PATHS = (
+					/EarlGrey/Submodules/eDistantObject,
+					"EarlGrey/**",
+				);
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A29C034122D11C0D00782F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TARGET_BUILD_DIR)/EarlGrey2Integration.app/EarlGrey2Integration";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.simon-kaz.eDOBundle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "eDOBundle/eDOBundle-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				USER_HEADER_SEARCH_PATHS = (
+					/EarlGrey/Submodules/eDistantObject,
+					"EarlGrey/**",
+				);
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -579,6 +744,15 @@
 			buildConfigurations = (
 				A29C030722D10FA300782F01 /* Debug */,
 				A29C030822D10FA300782F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A29C033F22D11C0D00782F01 /* Build configuration list for PBXNativeTarget "eDOBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A29C034022D11C0D00782F01 /* Debug */,
+				A29C034122D11C0D00782F01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
