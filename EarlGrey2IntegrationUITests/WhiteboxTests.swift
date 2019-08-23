@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import XCTest
 
 /// An extension of XCTestCase to set up the test host.
 private extension XCTestCase {
