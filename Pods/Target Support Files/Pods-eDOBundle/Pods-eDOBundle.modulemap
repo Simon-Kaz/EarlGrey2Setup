@@ -1,0 +1,6 @@
+module Pods_eDOBundle {
+  umbrella header "Pods-eDOBundle-umbrella.h"
+
+  export *
+  module * { export * }
+}

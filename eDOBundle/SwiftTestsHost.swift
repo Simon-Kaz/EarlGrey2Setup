@@ -59,5 +59,6 @@ public protocol SwiftTestsHost {
     for controlEvent: UIControlEvents
     ) -> TextFieldEditingEvents
   #endif
-  
+ 
+    func testAppDelegate()
 }

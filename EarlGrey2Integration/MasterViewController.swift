@@ -37,6 +37,33 @@ class MasterViewController: UITableViewController {
     objects.insert(NSDate(), at: 0)
     let indexPath = IndexPath(row: 0, section: 0)
     tableView.insertRows(at: [indexPath], with: .automatic)
+    
+    
+    let session = URLSession.shared
+    let url = URL(string: "https://test.xyz/test/response")!
+    
+    let task = session.dataTask(with: url) { data, response, error in
+        
+        if error != nil || data == nil {
+            print("Client error!")
+            print(error)
+            return
+        }
+        
+        guard let response = response as? HTTPURLResponse, (200...299).contains(response.statusCode) else {
+            print("Server error!")
+            return
+        }
+        
+        do {
+            let json = try JSONSerialization.jsonObject(with: data!, options: [])
+            print(json)
+        } catch {
+            print("JSON error: \(error.localizedDescription)")
+        }
+    }
+    
+    task.resume()
   }
 
   // MARK: - Segues

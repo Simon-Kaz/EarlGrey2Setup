@@ -23,6 +23,10 @@
 		A29C034E22D127D400782F01 /* SwiftTestsHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C034D22D127D400782F01 /* SwiftTestsHost.swift */; };
 		A29C035022D1280700782F01 /* WhiteboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C034F22D1280700782F01 /* WhiteboxTests.swift */; };
 		A29C035122D1286200782F01 /* SwiftTestsHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C034D22D127D400782F01 /* SwiftTestsHost.swift */; };
+		CC2B11FD231439490033F084 /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = CC2B11F8231439490033F084 /* response.json */; };
+		CC2B11FF2314396D0033F084 /* swapped.json in Resources */ = {isa = PBXBuildFile; fileRef = CC2B11FE2314396D0033F084 /* swapped.json */; };
+		CCBFEC042BB0EB28DF35EE99 /* libPods-eDOBundle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A720D5C584EB71A8A5606BF7 /* libPods-eDOBundle.a */; };
+		E6903A74E225A0D5E9455013 /* libPods-EarlGrey2Integration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4372E3FC8FD9F1F94578DD /* libPods-EarlGrey2Integration.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +98,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9DD6148FF2F5FA78C9CD40FF /* Pods-EarlGrey2Integration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlGrey2Integration.debug.xcconfig"; path = "Target Support Files/Pods-EarlGrey2Integration/Pods-EarlGrey2Integration.debug.xcconfig"; sourceTree = "<group>"; };
+		A07CF64238D70DB05524C8FC /* Pods-EarlGrey2Integration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlGrey2Integration.release.xcconfig"; path = "Target Support Files/Pods-EarlGrey2Integration/Pods-EarlGrey2Integration.release.xcconfig"; sourceTree = "<group>"; };
 		A29C02E422D10FA200782F01 /* EarlGrey2Integration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarlGrey2Integration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29C02E722D10FA200782F01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A29C02E922D10FA200782F01 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +120,12 @@
 		A29C034B22D1262D00782F01 /* GREYHostApplicationDistantObject+SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GREYHostApplicationDistantObject+SwiftTests.swift"; sourceTree = "<group>"; };
 		A29C034D22D127D400782F01 /* SwiftTestsHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestsHost.swift; sourceTree = "<group>"; };
 		A29C034F22D1280700782F01 /* WhiteboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteboxTests.swift; sourceTree = "<group>"; };
+		A720D5C584EB71A8A5606BF7 /* libPods-eDOBundle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eDOBundle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2B11F8231439490033F084 /* response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
+		CC2B11FE2314396D0033F084 /* swapped.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = swapped.json; sourceTree = "<group>"; };
+		DD4372E3FC8FD9F1F94578DD /* libPods-EarlGrey2Integration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EarlGrey2Integration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01CE3ED9068C03116BF37E9 /* Pods-eDOBundle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eDOBundle.debug.xcconfig"; path = "Target Support Files/Pods-eDOBundle/Pods-eDOBundle.debug.xcconfig"; sourceTree = "<group>"; };
+		F16471EC712A90E21CCA0D41 /* Pods-eDOBundle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eDOBundle.release.xcconfig"; path = "Target Support Files/Pods-eDOBundle/Pods-eDOBundle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6903A74E225A0D5E9455013 /* libPods-EarlGrey2Integration.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +150,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				A29C034422D11C7D00782F01 /* AppFramework.framework in Frameworks */,
+				CCBFEC042BB0EB28DF35EE99 /* libPods-eDOBundle.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BFB301DFC33D31D87F65A89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DD6148FF2F5FA78C9CD40FF /* Pods-EarlGrey2Integration.debug.xcconfig */,
+				A07CF64238D70DB05524C8FC /* Pods-EarlGrey2Integration.release.xcconfig */,
+				E01CE3ED9068C03116BF37E9 /* Pods-eDOBundle.debug.xcconfig */,
+				F16471EC712A90E21CCA0D41 /* Pods-eDOBundle.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A29C02DB22D10FA100782F01 = {
 			isa = PBXGroup;
 			children = (
@@ -151,7 +176,8 @@
 				A29C033D22D11C0D00782F01 /* eDOBundle */,
 				A29C02E522D10FA200782F01 /* Products */,
 				A29C030A22D1125100782F01 /* EarlGrey.xcodeproj */,
-				A29C032822D112BE00782F01 /* Frameworks */,
+				8BFB301DFC33D31D87F65A89 /* Pods */,
+				C86C35362DEF5190B8387D55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +194,8 @@
 		A29C02E622D10FA200782F01 /* EarlGrey2Integration */ = {
 			isa = PBXGroup;
 			children = (
+				CC2B11FE2314396D0033F084 /* swapped.json */,
+				CC2B11F8231439490033F084 /* response.json */,
 				A29C02E722D10FA200782F01 /* AppDelegate.swift */,
 				A29C02E922D10FA200782F01 /* MasterViewController.swift */,
 				A29C02EB22D10FA200782F01 /* DetailViewController.swift */,
@@ -203,13 +231,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A29C032822D112BE00782F01 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		A29C033D22D11C0D00782F01 /* eDOBundle */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +241,15 @@
 			path = eDOBundle;
 			sourceTree = "<group>";
 		};
+		C86C35362DEF5190B8387D55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD4372E3FC8FD9F1F94578DD /* libPods-EarlGrey2Integration.a */,
+				A720D5C584EB71A8A5606BF7 /* libPods-eDOBundle.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A29C030322D10FA300782F01 /* Build configuration list for PBXNativeTarget "EarlGrey2Integration" */;
 			buildPhases = (
+				028982C0D33269D7C4787119 /* [CP] Check Pods Manifest.lock */,
 				A29C02E022D10FA200782F01 /* Sources */,
 				A29C02E122D10FA200782F01 /* Frameworks */,
 				A29C02E222D10FA200782F01 /* Resources */,
@@ -264,6 +295,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A29C033F22D11C0D00782F01 /* Build configuration list for PBXNativeTarget "eDOBundle" */;
 			buildPhases = (
+				AA6D5F18F8204368337CF94A /* [CP] Check Pods Manifest.lock */,
 				A29C033822D11C0D00782F01 /* Sources */,
 				A29C033922D11C0D00782F01 /* Frameworks */,
 				A29C033A22D11C0D00782F01 /* Resources */,
@@ -363,7 +395,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2B11FD231439490033F084 /* response.json in Resources */,
 				A29C02F422D10FA300782F01 /* LaunchScreen.storyboard in Resources */,
+				CC2B11FF2314396D0033F084 /* swapped.json in Resources */,
 				A29C02F122D10FA300782F01 /* Assets.xcassets in Resources */,
 				A29C02EF22D10FA200782F01 /* Main.storyboard in Resources */,
 			);
@@ -384,6 +418,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		028982C0D33269D7C4787119 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EarlGrey2Integration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA6D5F18F8204368337CF94A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eDOBundle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A29C02E022D10FA200782F01 /* Sources */ = {
@@ -569,9 +650,11 @@
 		};
 		A29C030422D10FA300782F01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DD6148FF2F5FA78C9CD40FF /* Pods-EarlGrey2Integration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = EarlGrey2Integration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -587,9 +670,11 @@
 		};
 		A29C030522D10FA300782F01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A07CF64238D70DB05524C8FC /* Pods-EarlGrey2Integration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = EarlGrey2Integration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -657,6 +742,7 @@
 		};
 		A29C034022D11C0D00782F01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E01CE3ED9068C03116BF37E9 /* Pods-eDOBundle.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TARGET_BUILD_DIR)/EarlGrey2Integration.app/EarlGrey2Integration";
@@ -689,6 +775,7 @@
 		};
 		A29C034122D11C0D00782F01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F16471EC712A90E21CCA0D41 /* Pods-eDOBundle.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TARGET_BUILD_DIR)/EarlGrey2Integration.app/EarlGrey2Integration";

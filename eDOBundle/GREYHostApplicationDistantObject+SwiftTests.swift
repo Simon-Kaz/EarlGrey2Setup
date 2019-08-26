@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+@testable import EarlGrey2Integration
 
 /// Class to check if particular named notification is received or not.
 @objcMembers fileprivate class TextFieldNotificationRecorder: NSObject, TextFieldNotification {
@@ -131,4 +132,12 @@ extension GREYHostApplicationDistantObject: SwiftTestsHost {
     }
     _ = navController?.popToRootViewController(animated: true)
   }
+    
+    public func testAppDelegate() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            //            DDLogError("We expect UIApplication.shared.delegate to be type AppDelegate, returning early")
+            return
+        }
+        appDelegate.replaceMock()
+    }
 }

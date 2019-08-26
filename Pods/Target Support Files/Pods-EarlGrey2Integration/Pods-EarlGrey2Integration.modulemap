@@ -1,0 +1,6 @@
+module Pods_EarlGrey2Integration {
+  umbrella header "Pods-EarlGrey2Integration-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -35,7 +35,9 @@ class WhiteboxTests: XCTestCase {
   func testOpeningView() {
       EarlGrey.selectElement(with: grey_keyWindow())
       .perform(grey_tap())
-      host.resetNavigationStack()
+    host.testAppDelegate()
+    EarlGrey.selectElement(with: grey_keyWindow())
+        .perform(grey_tap())
   }
 
 }

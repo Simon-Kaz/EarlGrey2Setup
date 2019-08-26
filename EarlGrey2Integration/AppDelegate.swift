@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import OHHTTPStubs
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
   var window: UIWindow?
-
+    var descriptor: OHHTTPStubsDescriptor?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
@@ -20,6 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
     navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
     splitViewController.delegate = self
+    
+    descriptor = stub(condition: isPath("/test/response"), response: { _ in
+        
+        return OHHTTPStubsResponse(fileAtPath: OHPathForFile("response.json", type(of: self))!, statusCode: 200, headers: nil)
+    })
+    
     return true
   }
 
@@ -56,6 +63,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
       }
       return false
   }
-
+    
+    func replaceMock() {
+        OHHTTPStubs.removeStub(descriptor!)
+        
+        descriptor = stub(condition: isPath("/test/response"), response: { _ in
+            return OHHTTPStubsResponse(fileAtPath: OHPathForFile("swapped.json", type(of: self))!, statusCode: 200, headers: nil)
+        })
+    }
 }
 
