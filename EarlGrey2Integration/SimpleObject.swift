@@ -9,7 +9,18 @@
 import Foundation
 
 
-@objc public class SimpleObject: NSObject {
+@objc public class SimpleObject: NSObject, NSCoding {
+    public func encode(with aCoder: NSCoder) {
+        aCoder.encode(name, forKey: "name")
+        aCoder.encode(value, forKey: "value")
+    }
+    
+    required convenience public init?(coder aDecoder: NSCoder) {
+        let name = aDecoder.decodeObject(forKey: "name") as! String
+        let value = aDecoder.decodeObject(forKey: "value") as! Int32
+        self.init(name: name, value: value)
+    }
+    
     var name: String
     var value: Int32
     
