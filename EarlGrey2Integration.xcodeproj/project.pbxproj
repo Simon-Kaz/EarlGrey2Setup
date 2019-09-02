@@ -25,6 +25,9 @@
 		A29C035122D1286200782F01 /* SwiftTestsHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C034D22D127D400782F01 /* SwiftTestsHost.swift */; };
 		CC2B11FD231439490033F084 /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = CC2B11F8231439490033F084 /* response.json */; };
 		CC2B11FF2314396D0033F084 /* swapped.json in Resources */ = {isa = PBXBuildFile; fileRef = CC2B11FE2314396D0033F084 /* swapped.json */; };
+		CC2B1204231D1CDE0033F084 /* SimpleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B1203231D1CDE0033F084 /* SimpleObject.swift */; };
+		CC2B1205231D1D940033F084 /* SimpleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B1203231D1CDE0033F084 /* SimpleObject.swift */; };
+		CC2B1206231D1D970033F084 /* SimpleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B1203231D1CDE0033F084 /* SimpleObject.swift */; };
 		CCBFEC042BB0EB28DF35EE99 /* libPods-eDOBundle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A720D5C584EB71A8A5606BF7 /* libPods-eDOBundle.a */; };
 		E6903A74E225A0D5E9455013 /* libPods-EarlGrey2Integration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4372E3FC8FD9F1F94578DD /* libPods-EarlGrey2Integration.a */; };
 /* End PBXBuildFile section */
@@ -123,6 +126,7 @@
 		A720D5C584EB71A8A5606BF7 /* libPods-eDOBundle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eDOBundle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2B11F8231439490033F084 /* response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
 		CC2B11FE2314396D0033F084 /* swapped.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = swapped.json; sourceTree = "<group>"; };
+		CC2B1203231D1CDE0033F084 /* SimpleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleObject.swift; sourceTree = "<group>"; };
 		DD4372E3FC8FD9F1F94578DD /* libPods-EarlGrey2Integration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EarlGrey2Integration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01CE3ED9068C03116BF37E9 /* Pods-eDOBundle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eDOBundle.debug.xcconfig"; path = "Target Support Files/Pods-eDOBundle/Pods-eDOBundle.debug.xcconfig"; sourceTree = "<group>"; };
 		F16471EC712A90E21CCA0D41 /* Pods-eDOBundle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eDOBundle.release.xcconfig"; path = "Target Support Files/Pods-eDOBundle/Pods-eDOBundle.release.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +208,7 @@
 				A29C02F222D10FA300782F01 /* LaunchScreen.storyboard */,
 				A29C02F522D10FA300782F01 /* Info.plist */,
 				A29C034722D123DF00782F01 /* SwiftTestBridgingHeader.h */,
+				CC2B1203231D1CDE0033F084 /* SimpleObject.swift */,
 			);
 			path = EarlGrey2Integration;
 			sourceTree = "<group>";
@@ -473,6 +478,7 @@
 			files = (
 				A29C02EC22D10FA200782F01 /* DetailViewController.swift in Sources */,
 				A29C02EA22D10FA200782F01 /* MasterViewController.swift in Sources */,
+				CC2B1204231D1CDE0033F084 /* SimpleObject.swift in Sources */,
 				A29C02E822D10FA200782F01 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +491,7 @@
 				A29C035122D1286200782F01 /* SwiftTestsHost.swift in Sources */,
 				A29C035022D1280700782F01 /* WhiteboxTests.swift in Sources */,
 				A29C02FF22D10FA300782F01 /* EarlGrey2IntegrationUITests.swift in Sources */,
+				CC2B1206231D1D970033F084 /* SimpleObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +500,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A29C034C22D1262D00782F01 /* GREYHostApplicationDistantObject+SwiftTests.swift in Sources */,
+				CC2B1205231D1D940033F084 /* SimpleObject.swift in Sources */,
 				A29C034E22D127D400782F01 /* SwiftTestsHost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -140,4 +140,8 @@ extension GREYHostApplicationDistantObject: SwiftTestsHost {
         }
         appDelegate.replaceMock()
     }
+    
+    public func testReturnType() -> SimpleObject {
+        return SimpleObject(name: "test", value: 123)
+    }
 }

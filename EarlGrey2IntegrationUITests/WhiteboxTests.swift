@@ -39,5 +39,10 @@ class WhiteboxTests: XCTestCase {
     EarlGrey.selectElement(with: grey_keyWindow())
         .perform(grey_tap())
   }
+    
+    func testReturnType() {
+        let object = host.testReturnType()
+        print(object)
+    }
 
 }

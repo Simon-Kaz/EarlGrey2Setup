@@ -61,4 +61,6 @@ public protocol SwiftTestsHost {
   #endif
  
     func testAppDelegate()
+    
+    func testReturnType() -> SimpleObject
 }
