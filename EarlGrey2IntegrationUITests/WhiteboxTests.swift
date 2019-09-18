@@ -19,6 +19,8 @@ private extension XCTestCase {
   }
 }
 class WhiteboxTests: XCTestCase {
+    
+    static let staticSelector = grey_keyWindow()
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -31,11 +33,16 @@ class WhiteboxTests: XCTestCase {
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
-  
-  func testOpeningView() {
-      EarlGrey.selectElement(with: grey_keyWindow())
-      .perform(grey_tap())
-      host.resetNavigationStack()
-  }
+    
+    // For the issue to occur, at least 2 tests with a constant have to be run in the same test run
+    func testConstantUse() {
+        EarlGrey.selectElement(with: WhiteboxTests.staticSelector)
+            .perform(grey_tap())
+    }
+    
+    func testConstantUse2() {
+        EarlGrey.selectElement(with: WhiteboxTests.staticSelector)
+            .perform(grey_tap())
+    }
 
 }
